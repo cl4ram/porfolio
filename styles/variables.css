@@ -1,0 +1,16 @@
+:root {
+  --bp-mobile: 0px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1200px;
+
+  --container-desktop: 1200px;
+  --container-tablet: 720px;
+  --container-mobile: 100%;
+
+  --gutter: 24px;
+
+  --color-primary: #f2921d;
+  --color-secondary: #2c402d;
+  --color-bg: #fffaf1;
+  --color-text: #030708;
+}

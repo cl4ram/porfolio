@@ -1,0 +1,145 @@
+.bannerWrapper {
+  text-align: center;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerWrapper p {
+  color: var(--color-secondary);
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 20px 0 30px;
+}
+
+.bannerWrapper h1 {
+  font-size: 2.4rem;
+  margin: 0 30px;
+}
+.bannerWrapper h1 span {
+  color: var(--color-primary);
+}
+
+.titleWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.star {
+  position: absolute;
+  pointer-events: none;
+  height: auto;
+}
+
+.star1 {
+  top: -15px;
+  left: 35px;
+  width: 20px;
+}
+
+.star2 {
+  top: 15px;
+  left: 0px;
+  transform: translateY(-50%);
+  width: 50px;
+}
+
+.star3 {
+  bottom: 30px;
+  right: 2%;
+  width: 30px;
+}
+
+.ctaWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.primaryBtn,
+.secondaryBtn {
+  text-decoration: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 8px 30px;
+  font-weight: 600;
+  transition: transform 0.2s ease;
+  font-size: 1.1em;
+  width: 100%;
+}
+
+.primaryBtn {
+  background-color: var(--color-primary);
+  color: var(--color-text);
+}
+
+.secondaryBtn {
+  border: 2px solid var(--color-secondary);
+  color: var(--color-secondary);
+}
+
+.primaryBtn:hover {
+  transform: scale(1.05); /* Un efecto sutil al pasar el mouse */
+}
+
+@media (min-width: 768px) {
+  .bannerWrapper p {
+    font-size: 1.2rem;
+  }
+
+  .bannerWrapper h1 {
+    font-size: 3rem;
+  }
+
+  .ctaWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .primaryBtn,
+  .secondaryBtn {
+    max-width: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .bannerWrapper {
+    min-height: 70vh;
+  }
+
+  .bannerWrapper p {
+    font-size: 1.5rem;
+  }
+
+  .bannerWrapper h1 {
+    font-size: 3.85rem;
+  }
+
+  .star1 {
+    width: 30px;
+    top: -15px;
+    left: 110px;
+  }
+
+  .star2 {
+    width: 80px;
+    top: 37px;
+    left: 38px;
+    transform: translateY(-50%);
+  }
+
+  .star3 {
+    width: 50px;
+    bottom: 30px;
+    right: 5%;
+  }
+}

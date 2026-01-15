@@ -1,4 +1,6 @@
+import Hero from "@/components/sections/Hero/Hero"
 import { getMessages } from "@/lib/getMessages"
+import { Locale } from "@/lib/i18n"
 
 export default async function Home({
   params,
@@ -9,13 +11,9 @@ export default async function Home({
   const t = getMessages(locale)
 
   return (
-    <section>
-      <h1>{t["hero.title"]}</h1>
-      <p>{t["hero.subtitle"]}</p>
+    <>
+      <Hero locale={locale as Locale}/>
 
-      <p style={{ marginTop: 24 }}>
-        Idioma actual: <strong>{locale}</strong>
-      </p>
-    </section>
+    </>
   )
 }

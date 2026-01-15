@@ -1,6 +1,12 @@
 /* =========================
-   Container
-========================= */
+   Base (Mobile - 4 Columnas)
+   ========================= */
+
+:root {
+  --gutter: 1.5rem;
+  --container-tablet: 720px;
+  --container-desktop: 1140px;
+}
 
 .container {
   width: 100%;
@@ -8,19 +14,11 @@
   padding-inline: var(--gutter);
 }
 
-/* =========================
-   Grid system
-========================= */
-
 .grid {
   display: grid;
   gap: var(--gutter);
   grid-template-columns: repeat(4, 1fr);
 }
-
-/* =========================
-   Column spans
-========================= */
 
 .col-1 {
   grid-column: span 1;
@@ -31,16 +29,16 @@
 .col-3 {
   grid-column: span 3;
 }
-.col-4 {
-  grid-column: span 4;
-}
-.col-6 {
+.col-4,
+.col-6,
+.col-8,
+.col-12 {
   grid-column: span 4;
 }
 
 /* =========================
-   Tablet
-========================= */
+   Tablet (8 Columnas)
+   ========================= */
 
 @media (min-width: 768px) {
   .container {
@@ -51,18 +49,21 @@
     grid-template-columns: repeat(8, 1fr);
   }
 
-  .col-6 {
+  .col-4 {
     grid-column: span 4;
   }
-
-  .col-8 {
+  .col-6 {
+    grid-column: span 6;
+  }
+  .col-8,
+  .col-12 {
     grid-column: span 8;
   }
 }
 
 /* =========================
-   Desktop
-========================= */
+   Desktop (12 Columnas)
+   ========================= */
 
 @media (min-width: 1200px) {
   .container {
@@ -71,14 +72,6 @@
 
   .grid {
     grid-template-columns: repeat(12, 1fr);
-  }
-
-  .col-6 {
-    grid-column: span 6;
-  }
-
-  .col-8 {
-    grid-column: span 8;
   }
 
   .col-12 {

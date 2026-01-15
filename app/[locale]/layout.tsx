@@ -63,9 +63,9 @@ export default async function LocaleLayout({
 
   return (
     <div className={`${inter.variable} ${clashDisplay.variable}`}>
-      <Header />
+      <Header locale={locale as Locale}/>
       <main>{children}</main>
-      <Footer />
+      <Footer locale={locale as Locale}/>
     </div>
   )
 }

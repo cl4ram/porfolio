@@ -1,5 +1,6 @@
 import { getMessages } from "@/lib/getMessages";
 import { Locale } from "@/lib/i18n";
+import styles from './Footer.module.css';
 
 export default function Footer({ locale }: { locale: Locale }) {
   const t = getMessages(locale);

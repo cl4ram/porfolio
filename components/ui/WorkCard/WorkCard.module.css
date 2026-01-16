@@ -1,0 +1,25 @@
+.workCard {
+  border: solid 2px var(--color-text);
+  border-radius: 30px;
+  width: 100%;
+  padding: 25px;
+}
+
+.workCard .number {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+.workCard .title {
+  font-family: var(--font-heading);
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.workCard .description {
+  font-size: 1rem;
+  font-weight: 500;
+}
